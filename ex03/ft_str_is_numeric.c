@@ -1,14 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
+/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ade-beco <ade-beco@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/08 20:26:24 by ade-beco          #+#    #+#             */
-/*   Updated: 2023/09/11 10:47:26 by ade-beco         ###   ########.fr       */
+/*   Updated: 2023/09/11 10:50:23 by ade-beco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <unistd.h>
 
 int	ft_str_is_alpha(char *str)
 {
@@ -17,12 +18,9 @@ int	ft_str_is_alpha(char *str)
 	i = 0;
 	while (*str)
 	{
-		if ((str[i] < 'a') || (str[i] > 'z'))
+		if ((str[i] < '0') || (str[i] > '9'))
 		{
-			if ((str[i] < 'A') || (str[i] > 'Z'))
-			{
-				return (0);
-			}
+			return (0);
 		}
 		str++;
 	}
