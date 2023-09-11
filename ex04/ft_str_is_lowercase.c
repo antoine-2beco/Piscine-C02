@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ade-beco <ade-beco@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/11 10:26:24 by ade-beco          #+#    #+#             */
-/*   Updated: 2023/09/11 11:07:10 by ade-beco         ###   ########.fr       */
+/*   Created: 2023/09/11 11:00:24 by ade-beco          #+#    #+#             */
+/*   Updated: 2023/09/11 11:12:54 by ade-beco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_alpha(char *str)
+int	ft_str_is_lowercase(char *str)
 {
 	int	i;
 

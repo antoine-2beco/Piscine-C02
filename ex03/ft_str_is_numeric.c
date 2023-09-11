@@ -6,12 +6,11 @@
 /*   By: ade-beco <ade-beco@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/08 20:26:24 by ade-beco          #+#    #+#             */
-/*   Updated: 2023/09/11 10:50:23 by ade-beco         ###   ########.fr       */
+/*   Updated: 2023/09/11 11:12:17 by ade-beco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 
-int	ft_str_is_alpha(char *str)
+int	ft_str_is_numeric(char *str)
 {
 	int	i;
 
