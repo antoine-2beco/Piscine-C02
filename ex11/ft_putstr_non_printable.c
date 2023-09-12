@@ -29,7 +29,7 @@ void	ft_putstr_non_printable(char *str)
 	int		x;
 	int		i;
 	char	temp;
-	char 	*hex;
+	char	*hex;
 
 	i = 0;
 	hex = "0123456789abcdef";
