@@ -3,76 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ade-beco <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ade-beco <ade-beco@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/09 14:21:54 by ade-beco          #+#    #+#             */
-/*   Updated: 2023/09/11 10:31:28 by ade-beco         ###   ########.fr       */
+/*   Created: 2023/09/11 15:12:02 by ade-beco          #+#    #+#             */
+/*   Updated: 2023/09/11 16:15:29 by ade-beco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 
-void	ft_putstr(char	*a)
-{
-	char temp;
-	int i;
-
-	i = 0;
-	while(*a)
-	{
-		temp = a[i];
-		write(1, &temp, 1);
-		a++;
-	}
-	write(1, "\n", 1);
-}
-
-int ft_strlen(char *str)
-{
-    int x;
-
-    x = 0;
-    while (*str)
-    {
-        str++;
-        x++;
-    }
-    return (x);
-
-}
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int	counter;
-	char x;
-	unsigned int	i;
-	
-	ft_putstr(src);
-	ft_putstr(dest);
-	counter = 0;
-	while (counter <= n)
+	int i;
+	char temp;
+
+	i = 0;
+	while ((src[i] != '\0') && (i < n))
 	{
-		while (counter <= ft_strlen(src) && counter <= n)
-		{
-			dest[i] = src[i];
-			dest++;
-			src++;
-			counter++;
-		}
-		x = '\0';
-		dest[i] = x;
-		dest++;
-		counter++;
+		dest[i] = src[i];
+		i++;
 	}
-	ft_putstr(dest);
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
 	return (dest);
 }
-
- int main(void)
-{
-	char src[6] = "Salut";
-	char dest[10];
-	unsigned int n = 10;
-
-	ft_strncpy(dest, src, n);
-	return (0);
-}
-
