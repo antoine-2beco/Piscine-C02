@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+// #include<unistd.h>
+
 char	*ft_strupcase(char *str)
 {
 	int	i;
@@ -23,3 +25,20 @@ char	*ft_strupcase(char *str)
 	}
 	return (str);
 }
+/*
+int main(void)
+{
+	char str[] = {"hfsdfdsf^&%^%"};
+	char *res = {ft_strupcase(str)};
+	int x = 0;
+	char temp;
+
+	while (res[x] != '\0')
+	{
+		temp = str[x];
+		write(1, &temp, 1);
+		x++;
+	}
+	return (0);
+}
+*/
