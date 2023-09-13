@@ -6,7 +6,7 @@
 /*   By: ade-beco <ade-beco@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 18:27:27 by ade-beco          #+#    #+#             */
-/*   Updated: 2023/09/13 11:18:09 by ade-beco         ###   ########.fr       */
+/*   Updated: 2023/09/13 12:23:21 by ade-beco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_strlen(char *str)
 	return (counter);
 }
 
-void ft_putstr_non_printable(char *str)
+void	ft_putstr_non_printable(char *str)
 {
 	int		x;
 	int		i;
