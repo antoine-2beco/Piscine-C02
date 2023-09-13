@@ -6,11 +6,11 @@
 /*   By: ade-beco <ade-beco@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 18:27:27 by ade-beco          #+#    #+#             */
-/*   Updated: 2023/09/11 18:36:54 by ade-beco         ###   ########.fr       */
+/*   Updated: 2023/09/13 11:18:09 by ade-beco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <unistd.h>
+#include <unistd.h>
 
 int	ft_strlen(char *str)
 {
@@ -25,7 +25,7 @@ int	ft_strlen(char *str)
 	return (counter);
 }
 
-void	ft_putstr_non_printable(char *str)
+void ft_putstr_non_printable(char *str)
 {
 	int		x;
 	int		i;
@@ -53,3 +53,15 @@ void	ft_putstr_non_printable(char *str)
 		i++;
 	}
 }
+/*
+int main(void)
+{
+	char str[] = {"Coucou\ntu vas bien ?\a \b \t \n \v \f \r \e \\ \? \'"};
+	char str2[3];
+	str2[0] = 14;
+	str2[1] = -1;
+	str2[2] = 127;
+	ft_putstr_non_printable(str2);
+	return (0);
+}
+*/

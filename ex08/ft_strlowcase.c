@@ -6,7 +6,7 @@
 /*   By: ade-beco <ade-beco@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 12:04:31 by ade-beco          #+#    #+#             */
-/*   Updated: 2023/09/11 12:13:31 by ade-beco         ###   ########.fr       */
+/*   Updated: 2023/09/13 10:59:10 by ade-beco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 
 char	*ft_strlowcase(char *str)
 {
-	int		i;
-	char	temp;
+	int	i;
 
 	i = 0;
 	while (str[i] != '\0')

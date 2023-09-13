@@ -6,11 +6,11 @@
 /*   By: ade-beco <ade-beco@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 12:16:37 by ade-beco          #+#    #+#             */
-/*   Updated: 2023/09/11 14:56:49 by ade-beco         ###   ########.fr       */
+/*   Updated: 2023/09/13 11:06:54 by ade-beco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include<unistd.h>
+//#include<unistd.h>
 
 char	*ft_strcapitalize(char *str)
 {
@@ -24,7 +24,7 @@ char	*ft_strcapitalize(char *str)
 		i++;
 	}
 	i = 0;
-	while (str[i + 1] != '\0')
+	while (str[i] != '\0')
 	{
 		if ((str[i] >= 'a') && (str[i] <= 'z'))
 		{
@@ -39,19 +39,20 @@ char	*ft_strcapitalize(char *str)
 	}
 	return (str);
 }
+/*
+int main(void)
+{
+	char str[] = {"salut, coMMent tu i vas ? 42m+un*n"};
+	char *res = {ft_strcapitalize(str)};
+	int x = 0;
+	char temp;
 
-// int main(void)
-// {
-// 	char str[] = {"salut, coMMent tu i vas ? 42m+un"};
-// 	char *res = {ft_strcapitalize(str)};
-// 	int x = 0;
-// 	char temp;
-
-// 	while (res[x] != '\0')
-// 	{
-// 		temp = str[x];
-// 		write(1, &temp, 1);
-// 		x++;
-// 	}
-// 	return (0);
-// }
+	while (res[x] != '\0')
+	{
+		temp = str[x];
+		write(1, &temp, 1);
+		x++;
+	}
+	return (0);
+}
+*/
