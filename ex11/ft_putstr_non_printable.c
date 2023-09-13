@@ -9,7 +9,8 @@
 /*   Updated: 2023/09/11 18:36:54 by ade-beco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
+
+//#include <unistd.h>
 
 int	ft_strlen(char *str)
 {
@@ -44,7 +45,7 @@ void	ft_putstr_non_printable(char *str)
 			x = (unsigned char)temp % 16;
 			write(1, &hex[x], 1);
 		}
-		else 
+		else
 		{
 			temp = str[i];
 			write(1, &temp, 1);
